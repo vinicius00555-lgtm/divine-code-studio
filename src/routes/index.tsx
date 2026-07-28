@@ -31,7 +31,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Método paso a paso para estudiar la Biblia, con 5 ebooks de regalo y garantía de 7 días.",
+          "El método simple que ya ayudó a miles de personas a entender la Biblia desde cero. Ebook + 5 bonos gratis por solo $6,90 USD.",
       },
       { property: "og:image", content: COVER },
       { name: "twitter:image", content: COVER },
