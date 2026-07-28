@@ -41,10 +41,19 @@ export const Route = createFileRoute("/")({
 });
 
 function Cta({ children }: { children: string }) {
+  const handleClick = () => {
+    if (typeof window !== "undefined" && (window as unknown as { fbq?: (...args: unknown[]) => void }).fbq) {
+      (window as unknown as { fbq: (...args: unknown[]) => void }).fbq("track", "InitiateCheckout", {
+        value: 6.9,
+        currency: "USD",
+      });
+    }
+  };
+
   return (
     <div className="flex justify-center">
       <Button variant="cta" size="cta" asChild>
-        <a href={CHECKOUT} target="_blank" rel="noopener noreferrer">
+        <a href={CHECKOUT} target="_blank" rel="noopener noreferrer" onClick={handleClick}>
           {children}
         </a>
       </Button>
