@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/accordion";
 import { Check, Gift, Lock, Mail, Smartphone, ShieldCheck, Star } from "lucide-react";
 
-const CHECKOUT = "https://pay.hotmart.com/O105685717F?checkoutMode=10";
+const CHECKOUT = "https://pay.kiwify.com/QhbFna5";
 const HERO_BG =
   "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/zcp5f2JYNk1Xc2OV/teste-wp-dWxO7M149zSxqZ4n.webp";
 const MOCKUP =
